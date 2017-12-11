@@ -24,8 +24,8 @@
             <!-- RIGHT -->
             <ul class="nav navbar-nav navbar-right">
                 @guest
-                    <li><a href="#">Log In</a</li>
-                    <li><a href="#">Sign Up</a</li>
+                    <li><a href="/login">Log In</a</li>
+                    <li><a href="/register">Sign Up</a</li>
                 @else
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
