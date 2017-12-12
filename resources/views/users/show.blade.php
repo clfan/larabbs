@@ -11,7 +11,7 @@
             <div class="panel-body">
                 <div class="media">
                     <div align="center">
-                        <img src="https://camo.githubusercontent.com/76cf64f8c548080c14b98cb217dde659b1f568c2/68747470733a2f2f312e67726176617461722e636f6d2f6176617461722f34366232646362303936353837623732363339643061363139633361613631633f643d68747470732533412532462532466173736574732d63646e2e6769746875622e636f6d253246696d6167657325324667726176617461727325324667726176617461722d757365722d3432302e706e6726723d7826733d3732" class="thumbnail img-responsive" width="300px" height="300px">
+                        <img src="{{ $user->avatar }}" class="thumbnail img-responsive" width="300px" height="300px">
                     </div>
 
                     <div class="media-body">
