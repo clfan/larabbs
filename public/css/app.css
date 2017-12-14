@@ -8368,6 +8368,19 @@ body {
   margin-bottom: 40px;
 }
 
+.navbar-static-top .dropdown-menu {
+  padding: 0px;
+}
+
+.navbar-static-top .dropdown-menu li a {
+  border-bottom: 1px solid #d8d8d8;
+  line-height: 2.4;
+}
+
+.navbar-static-top .dropdown-menu li a .glyphicon {
+  margin-right: 8px;
+}
+
 /* sticky footer styles */
 
 html {
@@ -8415,33 +8428,55 @@ body {
   margin-bottom: 0px;
 }
 
+.users-show-page .nav-tabs {
+  margin-bottom: 20px;
+}
+
+.users-show-page .nav-tabs > li.active > a {
+  background-color: #fff;
+}
+
+.users-show-page .list-group .list-group-item {
+  border: none;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #efefef;
+}
+
+.users-show-page .list-group .list-group-item .meta {
+  color: #b3b3b3;
+}
+
+.users-show-page .pagination {
+  margin: 12px 0;
+}
+
 /* Topic Index page */
 
-.topic-index-page .topic-list .nav > li > a {
+.topic-index-page .category-index-page .topic-list .nav > li > a {
   position: relative;
   display: block;
   padding: 5px 14px;
   font-size: 0.9em;
 }
 
-.topic-index-page .topic-list a {
+.topic-index-page .category-index-page .topic-list a {
   color: #444444;
 }
 
-.topic-index-page .topic-list .meta {
+.topic-index-page .category-index-page .topic-list .meta {
   font-size: 0.9em;
   color: #b3b3b3;
 }
 
-.topic-index-page .topic-list .meta a {
+.topic-index-page .category-index-page .topic-list .meta a {
   color: #b3b3b3;
 }
 
-.topic-index-page .topic-list .badge {
+.topic-index-page .category-index-page .topic-list .badge {
   background-color: #d8d8d8;
 }
 
-.topic-index-page .topic-list hr {
+.topic-index-page .category-index-page .topic-list hr {
   margin-top: 12px;
   margin-bottom: 12px;
   border: 0;
