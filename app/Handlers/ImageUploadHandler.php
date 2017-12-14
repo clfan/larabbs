@@ -12,7 +12,7 @@ class ImageUploadHandler
     public function save($file, $folder, $file_prefix, $max_width = false)
     {
         // file path ex: uploads/images/avatars/201712/11/
-        $folder_name = "uploads/images/avatars/". date("Ym", time()) . '/'.date("d", time()). '/';
+        $folder_name = "uploads/images/$folder/". date("Ym", time()) . '/'.date("d", time()). '/';
 
         // file physical path ex: /var/www/larabbs/public/uploads/images/avatars/201712/11/
         $upload_path = public_path(). '/' . $folder_name;
