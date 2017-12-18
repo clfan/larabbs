@@ -25,7 +25,7 @@
                         </span>
                     </div>
                     <div class="reply-content">
-                        {!! $reply->content !!}
+                        {!! clean($reply->content, 'user_topic_body') !!}
                     </div>
                 </div>
             </div>
