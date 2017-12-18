@@ -28,6 +28,10 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        // if Horizon install
+        // \Horizon::auth(function ($request) {
+        //     // need Founder role
+        //     return \Auth::user()->hasRole('Founder');
+        // });
     }
 }
