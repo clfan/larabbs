@@ -27,13 +27,9 @@ class TopicObserver
         }
     }
 
-    public function creating(Topic $topic)
+    public function deleted(Topic $topic)
     {
-        //
+        \DB::table('replies')->where('topic_id', $topic->id)->delete();
     }
 
-    public function updating(Topic $topic)
-    {
-        //
-    }
 }
