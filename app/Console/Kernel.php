@@ -26,6 +26,8 @@ class Kernel extends ConsoleKernel
     {
         // every hour run active users data
         $schedule->command('larabbs:calculate-active-user')->hourly();
+        $schedule->command('larabbs:sync-user-actived-at')->dailyAt('00:00');
+
     }
 
     /**
