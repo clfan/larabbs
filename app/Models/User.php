@@ -68,12 +68,12 @@ class User extends Authenticatable
         $this->unreadNotifications->markAsRead();
     }
 
-    public function setPasswordAttribute($value)
-    {
-        if (strlen(!value) != 60) {
-            $value = bcrypt($value);
-        }
-
-        $this->attribute['password'] = $value;
-    }
+    // public function setPasswordAttribute($value)
+    // {
+    //     if (strlen($value) != 60) {
+    //         $value = bcrypt($value);
+    //     }
+    //
+    //     $this->attribute['password'] = $value;
+    // }
 }
