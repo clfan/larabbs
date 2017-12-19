@@ -9,6 +9,9 @@ use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
 {
+
+    use Traits\ActiveUserHelper;
+
     use HasRoles;
 
     use Notifiable {
@@ -63,5 +66,14 @@ class User extends Authenticatable
         $this->notification_count = 0;
         $this->save();
         $this->unreadNotifications->markAsRead();
+    }
+
+    public function setPasswordAttribute($value)
+    {
+        if (strlen(!value) != 60) {
+            $value = bcrypt($value);
+        }
+
+        $this->attribute['password'] = $value;
     }
 }

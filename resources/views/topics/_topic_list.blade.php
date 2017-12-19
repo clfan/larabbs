@@ -4,7 +4,7 @@
             <li class="media">
                 <div class="media-left">
                     <a href="{{ route('users.show', [$topic->user_id]) }}">
-                        <img src="{{ $topic->user->avatar }}" class="media-object img-thumbnail" style="width:52px;height:52px;" title="{{ $topic->name }}">
+                        <img src="{{ $topic->user['avatar'] }}" class="media-object img-thumbnail" style="width:52px;height:52px;" title="{{ $topic->name }}">
                     </a>
                 </div>
 
@@ -25,9 +25,9 @@
                         </a>
 
                         <span> * </span>
-                        <a href="{{ route('users.show', [$topic->user_id]) }}" title="{{ $topic->user->name }}">
+                        <a href="{{ route('users.show', [$topic->user_id]) }}" title="{{ $topic->user['name'] }}">
                             <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                            {{ $topic->user->name }}
+                            {{ $topic->user['name'] }}
                         </a>
 
                         <span> * </span>
